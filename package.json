@@ -1,0 +1,16 @@
+{
+  "name": "page",
+  "version": "1.0.0",
+  "main": "functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "mongodb": "^3.6.5"
+  }
+}
