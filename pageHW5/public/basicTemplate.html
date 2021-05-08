@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>This page was generated from a template  </title>
+
+</head>
+
+<body>
+    <!--
+    <form action="/comment" id="comment-form" method="post" enctype="multipart/form-data">
+        <label for="text-form-name">Name: </label>
+        <input id="text-form-name" type="text" name="name"><br/>
+        <label for="form-comment">Comment: </label>
+        <input id="form-comment" type="text" name="comment">
+        <input type="submit" value="Submit">
+      </form>
+-->
+    <h1> {{title}}  </h1>
+
+    <p> {{description}} </p>
+
+   {{loop}}
+   <h2>{{content_from_data_structure}}</h2>
+   {{end_loop}}
+
+</body>
+</html>

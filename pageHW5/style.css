@@ -1,0 +1,19 @@
+
+body {
+
+    color: rgb(250, 250, 250);
+    /* change transparency   */ 
+    background: rgba(1, 20, 1, 0.3) 
+}
+
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 40.00%;
+    padding: 8px;
+  }
+
+  

@@ -1,0 +1,5 @@
+For the object 1 I create my own webpage is showing the attractions of the new York city. 
+I added 3 pages, write my own css and JavaScript and index.html. I put the images under the relative path under the NYImage folder.
+For object 2. UTF-8. I create a function called the sendTextResponse. It will encode the this text file content with utf8, and buffer.from make this text content as string ByteArray. Then ship it on the TCP
+Object 3, I create function called the sendBinaryResponse in order to read the image file as byte and sent as the body in format of the response. 
+Object 4, I create a staticFiles map data structure and the HtmlTemplate and also the readerTemplate function to combine the data we get from the request based on the path, we parse the parse get the username and the images. Then we put into the correct format in the html format. So we combine this data with the html template structure. Then we send the response. 
