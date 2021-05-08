@@ -2333,7 +2333,7 @@ MongoClient.connect(url, function (err, db) {
             }
 
         })
-    }).listen({ host: "0.0.0.0", port: 8000 });
+    }).listen({ host: "0.0.0.0", port: 80 });
 
 });
 
