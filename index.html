@@ -1,0 +1,140 @@
+<html>
+
+<head>
+  <title>NYC Top Attractions</title>
+  <!--
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  -->
+  <!-- <script src="functions.js"></script>  
+  comment out above line for hw5 -->
+
+</head>
+<!--
+<body onload="welcomeAlert();">
+-->
+
+<!-- <body onload="init();"> comment out for hw5-->
+
+<body>
+  <button id = 'a'></button>
+  <h1 style="text-align:center">Things to Do in New York City </h1>
+
+  <!--
+<p>
+
+<h2> Let's Explore New York City! The top 3 attractions to visit in New York City are: </h2>
+
+</p>
+
+
+<div class="row">
+  <div class="column">
+    <img src="NYCImage\9_11_Memorial.jpg" alt="9_11_National Memorial Museum" style="width:100%">
+    <h3>The National 9/11 Memorial & Museum</h3>
+    <p>The National September 11 Memorial & Museum is a memorial and museum in New York City commemorating the September
+      11, 2001 attacks, which killed 2,977 people, and the 1993 World Trade Center bombing,which killed six.</p>
+  </div>
+
+  <div class="column">
+    <img src="NYCImage\Metropolitan_Museum.jpg" alt="The Metropolitan Museum of Art" style="width:100%">
+    <h3>The Metropolitan Museum of Art</h3>
+    <p>The Metropolitan Museum of Art of New York City, colloquially "the Met", is the largest art museum in the United
+      States. With 6,479,548 visitors to its three locations in 2019, it was the fourth most visited art museum in the
+      world. </p>
+  </div>
+
+  <div class="column">
+    <img src="NYCImage\Central_Park.jpg" alt="Central Park" style="width:100%">
+    <h3>Central Park</h3>
+    <p>Central Park is an urban park in New York City located between the Upper West and Upper East Sides of Manhattan.
+      It is the fifth-largest park in the city by area, covering 843 acres.</p>
+  </div>
+
+</div>
+-->
+
+
+  <h2 style="text-align:center">Let's Chat and Share our Sightseeing here </h2>
+
+  <h3>Register your account here</h3>
+  <form action="/registration" id="registration-form" method="post" enctype="multipart/form-data">
+    <label for="register-form-name">Name: </label>
+    <input id="register-form-name" type="text" name="name"><br />
+    <label for="register-password">Password: </label>
+    <input id="register-password" type="text" name="Password">
+
+    <b> <br>Password format requirement below: <br>
+      1: A minimum length of 8<br>
+      2: At least 1 lowercase character<br>
+      3: At least 1 uppercase character<br>
+      4: At least 1 number<br>
+      5: At least 1 special character<br>
+      6: Additional criteria:No any repeated character or a series of characters (e.g., AA or 12 or aa or !!).<br>
+    </b>
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <h3>Log in your account here</h3>
+  <form action="/login" id="login-form" method="post" enctype="multipart/form-data">
+    <label for="login-form-name">Name: </label>
+    <input id="login-form-name" type="text" name="name"><br />
+    <label for="login-password">Log In Password: </label>
+    <input id="login-password" type="text" name="comment">
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- for websocket text chat move to html template already
+  <h3>Submit your Comment below </h3>
+  <label for="chat-name">Name: </label>
+  <input id="chat-name" type="text" name="name">
+  <br />
+  <label for="chat-comment">Comment: </label>
+  <input id="chat-comment" type="text" name="comment">
+
+  <button onclick="sendMessage();">Chat</button>
+-->
+
+
+  <!--for websocket image share move to html template already
+
+
+
+-->
+
+  <!--   this is for profile image
+          <form action="/image-upload" id="image-form" method="post" enctype="multipart/form-data">
+            <label for="form-file">Image: </label>
+            <input id="form-file" type="file" name="upload">
+            <br />
+            <label for="image-form-name">Caption: </label>
+            <input id="image-form-name" type="text" name="name">
+            <input type="submit" value="Submit">
+          </form>
+          -->
+
+  <!-- <h1 style="text-align:center">Welcome to our Sightseeing Share Chat room </h1> -->
+
+  <div id="userlistTag"> </div>
+
+  <div id="chat">
+
+    <h1> {{title}} </h1>
+    <p> {{profileImage}} </p>
+    <p> {{uploadProfile}} </p>
+    <p> {{description}} </p>
+    <p> {{textSendPart}} </p>
+
+    {{loop}}
+
+    <h2>{{content_from_data_structure}}</h2>
+
+    {{end_loop}}
+
+  </div>
+
+
+
+</body>
+
+</html>
